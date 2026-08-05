@@ -1,0 +1,6 @@
+{
+  "name": "PM Workspace",
+  "description": "A Product Manager workspace featuring multi-project Kanban, real-time dashboards, and an integrated AI agent for task analysis and local file interaction.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
