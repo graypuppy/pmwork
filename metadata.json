@@ -1,6 +1,6 @@
 {
   "name": "PM Workspace",
-  "description": "A Product Manager workspace featuring multi-project Kanban, real-time dashboards, and an integrated AI agent for task analysis and local file interaction.",
+  "description": "A comprehensive Product & R&D lifecycle workspace featuring AI automated requirements design, interactive UI prototyping, product knowledge base, code architecture scaffolds, automated test management, competitor analysis, and full-lifecycle deliverables generation.",
   "requestFramePermissions": [],
   "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
 }

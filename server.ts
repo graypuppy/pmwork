@@ -175,6 +175,72 @@ ${Array.isArray(files) && files.length > 0 ? files.map((f: any) => `• **${f.na
     res.json(files);
   });
 
+  // AI Product Deliverable Generator Endpoint
+  app.post('/api/rnd/generate-deliverable', async (req, res) => {
+    try {
+      const { product, code, deliverableTitle, customPrompt } = req.body;
+
+      if (process.env.GEMINI_API_KEY) {
+        const ai = new GoogleGenAI({
+          apiKey: process.env.GEMINI_API_KEY,
+          httpOptions: { headers: { 'User-Agent': 'aistudio-build' } }
+        });
+
+        const prompt = `你是一个资深大厂首席产品总监与系统架构师。请为产品【${product?.name || '新产品'}】深度生成专业产研成果物【${deliverableTitle}】(编号: ${code})。
+产品定位: ${product?.tagline || ''}
+产品描述: ${product?.description || ''}
+当前阶段: ${product?.stage || '研发中'}
+附加生成要求: ${customPrompt || '生成符合互联网大厂规范的高质量、可直接交付的内容'}
+
+请生成格式优美、结构严谨、细节充实的内容。若是 Markdown 则使用清晰的多级标题与表格；若是 JSON 或 SQL 则输出标准格式代码。`;
+
+        const response = await ai.models.generateContent({
+          model: 'gemini-3.6-flash',
+          contents: prompt,
+        });
+
+        return res.json({ content: response.text });
+      }
+
+      res.json({ status: 'fallback', message: 'Ready' });
+    } catch (err: any) {
+      console.error('Deliverable generation error:', err);
+      res.status(500).json({ error: err.message });
+    }
+  });
+
+  // AI Knowledge Article Polish Endpoint
+  app.post('/api/rnd/polish-knowledge-article', async (req, res) => {
+    try {
+      const { title, content, action } = req.body;
+
+      if (process.env.GEMINI_API_KEY) {
+        const ai = new GoogleGenAI({
+          apiKey: process.env.GEMINI_API_KEY,
+          httpOptions: { headers: { 'User-Agent': 'aistudio-build' } }
+        });
+
+        const prompt = `你是一个企业级知识库与技术文档专家。请对以下产品知识库文档执行操作【${action || '优化润色与结构化排版'}】：
+文档标题: ${title}
+原始内容:
+${content}
+
+要求：保持专业严谨、逻辑清晰，补充关键技术细节或业务规范，输出格式精美的 Markdown 文本。`;
+
+        const response = await ai.models.generateContent({
+          model: 'gemini-3.6-flash',
+          contents: prompt,
+        });
+
+        return res.json({ content: response.text });
+      }
+
+      res.json({ content });
+    } catch (err: any) {
+      res.status(500).json({ error: err.message });
+    }
+  });
+
   // Vite middleware for development
   if (process.env.NODE_ENV !== 'production') {
     const vite = await createViteServer({
