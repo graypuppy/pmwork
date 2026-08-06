@@ -178,11 +178,11 @@ export const INITIAL_REQUIREMENTS: Record<string, ProductRequirementDesign> = {
   p1: {
     id: 'req-p1-1',
     productId: 'p1',
-    title: 'WenXiBuddy AI 智能全流程研发协同引擎 PRD v3.5',
+    title: '产品经理工作台 AI 智能全流程研发协同引擎 PRD v3.5',
     version: 'v3.5.0',
     updatedAt: '2025-06-01 16:30',
     status: '已评审',
-    author: 'Brandon (PM Lead)',
+    author: 'graypuppy (PM Lead)',
     businessGoal: '打通自然语言意图识别、智能多任务分发、高保真原型渲染、代码脚手架生成及测试用例全自动生成的端到端产研闭环，缩短 60% 需求到上线的交付周期。',
     targetAudience: ['互联网产研团队 (PM / 架构师 / 研发 / QA)', '高科技数字化转型企业 TPM', '寻求 Agent 效能倍增的技术创新团队'],
     coreSummary: '涵盖大模型驱动的自然语言任务调度、实时交互原型沙箱、全生命周期成果物一键矩阵导出、测试用例自动化生成与竞品态势情报中心。',
@@ -282,7 +282,7 @@ export const INITIAL_REQUIREMENTS: Record<string, ProductRequirementDesign> = {
       { id: '4', label: '4. 逻辑闭环度漏洞自检', type: 'decision', desc: '检测异常分支与鉴权冲突' },
       { id: '5', label: '5. 成果物多端派发', type: 'end', desc: '原型/代码/用例/文档沉淀' }
     ],
-    prdMarkdown: `# WenXiBuddy AI 智能全流程研发协同引擎 PRD (v3.5)
+    prdMarkdown: `# 产品经理工作台 AI 智能全流程研发协同引擎 PRD (v3.5)
 
 ## 1. 业务背景与愿景
 在现代产研协作中，传统模式在“需求拆解 -> 原型设计 -> 技术架构 -> 测试用例 -> 发版交付”各个环节存在严重的工具割裂与信息损耗。
@@ -307,7 +307,7 @@ export const INITIAL_REQUIREMENTS: Record<string, ProductRequirementDesign> = {
 export const INITIAL_PROTOTYPES: Record<string, UIPrototypeScreen> = {
   p1: {
     id: 'proto-p1-1',
-    title: 'WenXiBuddy AI 智能多Agent协同工作台原型',
+    title: '产品经理工作台 AI 智能多Agent协同工作台原型',
     device: 'desktop',
     theme: 'indigo',
     route: '/workspace/agent-studio',
@@ -327,7 +327,7 @@ export const INITIAL_PROTOTYPES: Record<string, UIPrototypeScreen> = {
         title: '核心多模态 Agent 对话流',
         type: 'chat',
         data: [
-          { sender: 'PM Brandon', avatar: 'BR', time: '14:20', text: '请基于 WenXiBuddy Q3 规划，帮我生成完整的全流程需求规格书与高保真原型。', isUser: true },
+          { sender: 'PM graypuppy', avatar: 'GP', time: '14:20', text: '请基于 产品经理工作台 Q3 规划，帮我生成完整的全流程需求规格书与高保真原型。', isUser: true },
           { sender: 'Nova AI Agent', avatar: 'AI', time: '14:21', text: '收到！已识别业务目标为【AI 原生多 Agent 协同工作站】。正在为您调用 PRD 扩写 Agent、UI 原型生成器与测试用例引擎...', isUser: false },
           { sender: 'Nova AI Agent', avatar: 'AI', time: '14:22', text: '✅ 已完成 18 项全流程产研成果物推导！包含 PRD v3.5、OpenAPI 规范、PostgreSQL DDL 建表脚本及 42 条测试用例。', isUser: false, badge: '成果物已就绪' }
         ]
@@ -345,7 +345,7 @@ import { Bot, Sparkles, CheckCircle2, Send, Layers } from 'lucide-react';
 export function AgentStudioPrototype() {
   const [input, setInput] = useState('');
   const [messages, setMessages] = useState([
-    { sender: 'Brandon (PM)', text: '请帮我生成 Q3 需求规格书及测试用例。', isUser: true },
+    { sender: 'graypuppy (PM)', text: '请帮我生成 Q3 需求规格书及测试用例。', isUser: true },
     { sender: 'Nova Agent', text: '已为您生成完整 PRD v3.5、架构拓扑与 42 条测试用例！', isUser: false }
   ]);
 
@@ -384,7 +384,7 @@ export const INITIAL_KNOWLEDGE_BASE: Record<string, ProductKnowledgeItem[]> = {
     {
       id: 'kb-p1-1',
       productId: 'p1',
-      title: 'WenXiBuddy 系统技术架构全景与微服务拓扑',
+      title: '产品经理工作台 系统技术架构全景与微服务拓扑',
       category: '架构设计',
       tags: ['系统架构', '微服务', 'WebSocket', '高可用'],
       author: 'Alex (Tech Lead)',
@@ -394,7 +394,7 @@ export const INITIAL_KNOWLEDGE_BASE: Record<string, ProductKnowledgeItem[]> = {
       summary: '梳理了前端 React 19 单页框架、Node.js BFF 网关、AI 智能体调度路由与本地文件索引器的分层架构。',
       content: `## 1. 总体架构拓扑
 
-WenXiBuddy 采用现代化前后端一体化与轻量化 BFF 架构：
+产品经理工作台 采用现代化前后端一体化与轻量化 BFF 架构：
 - **前端表现层**：React 19 + TypeScript + Tailwind CSS 4 + Motion 动画库；
 - **BFF 接入层**：Express 路由网关，负责 API 请求鉴权、限流与上下文装配；
 - **AI 调度引擎**：基于 @google/genai SDK 与自定义 Function Calling 机制，实现自然语言到结构化操作的自动映射；
@@ -411,7 +411,7 @@ WenXiBuddy 采用现代化前后端一体化与轻量化 BFF 架构：
       title: '产品领域核心术语词典 (Glossary & Taxonomy)',
       category: '领域字典',
       tags: ['领域字典', '名词定义', '产研对齐'],
-      author: 'Brandon (PM)',
+      author: 'graypuppy (PM)',
       updatedAt: '2025-05-25',
       readTime: '4 分钟',
       isPinned: true,
@@ -516,7 +516,7 @@ export interface UserStoryMapping {
       code: `{
   "openapi": "3.0.0",
   "info": {
-    "title": "WenXiBuddy R&D Center API",
+    "title": "产品经理工作台 R&D Center API",
     "version": "3.5.0",
     "description": "API contract for automated PRD, prototype, test case and deliverable generation."
   },
@@ -589,8 +589,8 @@ CREATE INDEX idx_deliverables_phase ON rnd_deliverables(phase);`
       code: `## 🚀 Pull Request 变更说明
 
 ### 关联需求 / 成果物
-- 关联产品: \`WenXiBuddy AI 智能协同平台\`
-- 关联 PRD: \`PRD_WenXiBuddy_v3.5\`
+- 关联产品: \`产品经理工作台\`
+- 关联 PRD: \`PRD_产品经理工作台_v3.5\`
 - 变更类型: \`feat(rnd-center): 新增全生命周期成果物一键生成与代码脚手架工厂\`
 
 ### 核心改动清单
@@ -707,7 +707,7 @@ export const INITIAL_TEST_CASES: Record<string, TestCaseItem[]> = {
 export const INITIAL_COMPETITOR_DATA: Record<string, CompetitorAnalysisData> = {
   p1: {
     productId: 'p1',
-    productName: 'WenXiBuddy AI 智能协同平台',
+    productName: '产品经理工作台',
     updatedAt: '2025-06-01',
     radarData: [
       { dimension: 'AI 全自动工程化', ourProduct: 95, compA: 60, compB: 50, compC: 40 },
@@ -789,13 +789,13 @@ export const INITIAL_COMPETITOR_DATA: Record<string, CompetitorAnalysisData> = {
         '【大模型演进带来的架构适配成本】需持续适配最新 DeepSeek / Gemini / Claude 模型接口与上下文特性。'
       ]
     },
-    differentiationStrategy: `### 🎯 WenXiBuddy 核心破局与差异化定位策略
+    differentiationStrategy: `### 🎯 产品经理工作台 核心破局与差异化定位策略
 
 1. **以“全生命周期成果物一键工厂”为核心矛头**：
    不与通用文档软件争夺碎片化笔记市场，专注解决“技术团队交付物规范要求高、编写耗时久”的强痛点。通过一键推导 18 项专业产研交付物，建立不可替代的生产力壁垒。
 
 2. **打通“代码-文档-用例”三位一体的活态资产库**：
-   传统 PRD 评审后即沦为死文档。WenXiBuddy 实现了 PRD 与 OpenAPI 契约、PostgreSQL 表结构、Playwright 测试用例的双向同步，代码变动自动触发文档与用例自检。
+   传统 PRD 评审后即沦为死文档。产品经理工作台 实现了 PRD 与 OpenAPI 契约、PostgreSQL 表结构、Playwright 测试用例的双向同步，代码变动自动触发文档与用例自检。
 
 3. **极简操作流，降低大模型使用门槛**：
    无需复杂 Prompt 提示词工程，PM 和研发只需输入一句话目标或点击预设按钮，系统自动组装结构化上下文与大厂标准模板完成输出。`,

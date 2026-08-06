@@ -117,7 +117,7 @@ export interface Product {
 export const INITIAL_PRODUCTS_DATA: Product[] = [
   {
     id: 'p1',
-    name: 'WenXiBuddy AI 智能协同平台',
+    name: '产品经理工作台',
     tagline: '大模型驱动的新一代企业级多Agent团队协同工作站',
     description: '集成多智能体协同、智能任务流转、本地工作区索引与知识库沉淀的综合性产品研发效能平台。',
     category: 'AI 协同 / SaaS',
@@ -125,12 +125,12 @@ export const INITIAL_PRODUCTS_DATA: Product[] = [
     status: '按期推进',
     progress: 88,
     health: 'healthy',
-    owner: 'Brandon (产品负责人)',
+    owner: 'graypuppy (产品负责人)',
     version: 'v3.2.0-rc1',
     releaseDate: '2025-06-30',
     deadline: '2025-06-30',
     team: [
-      { name: 'Brandon', role: 'Lead PM', avatar: 'BR', color: 'bg-indigo-600' },
+      { name: 'graypuppy', role: 'Lead PM', avatar: 'GP', color: 'bg-indigo-600' },
       { name: 'Alex', role: 'Tech Lead', avatar: 'AL', color: 'bg-blue-600' },
       { name: 'Chloe', role: 'UI/UX', avatar: 'CH', color: 'bg-rose-500' },
       { name: 'David', role: 'AI Algorithm', avatar: 'DA', color: 'bg-emerald-600' },
@@ -159,15 +159,15 @@ export const INITIAL_PRODUCTS_DATA: Product[] = [
     documents: [
       {
         id: 'doc-1',
-        title: 'PRD_WenXiBuddy_核心业务需求规格说明书_v3.2.docx',
+        title: 'PRD_产品经理工作台_核心业务需求规格说明书_v3.2.docx',
         category: 'PRD需求',
         version: 'v3.2.0',
-        author: 'Brandon (PM)',
+        author: 'graypuppy (PM)',
         updatedAt: '2025-05-18 14:30',
         wordCount: '12,450 字',
         summary: '定义了 Q3 版本的核心业务流转、权限体系重构、智能工作区与多 Agent 协同触发协议。',
         content: `### 1. 项目背景与业务目标
-WenXiBuddy 3.0 致力于解决研发团队在日常需求拆解、任务分发与文档沉淀之间的上下文断层。通过引入专属 Agent 工作区，实现“自然语言输入 -> 结构化任务 -> 关联日程预定 -> 本地工作区同步”的端到端自动化。
+产品经理工作台 3.0 致力于解决研发团队在日常需求拆解、任务分发与文档沉淀之间的上下文断层。通过引入专属 Agent 工作区，实现“自然语言输入 -> 结构化任务 -> 关联日程预定 -> 本地工作区同步”的端到端自动化。
 
 ### 2. 核心功能规格说明
 - **Agent 工作区交互**：支持自然语言多轮交互，支持快速挂载工具箱与特定执行 Agent。
@@ -334,11 +334,11 @@ WenXiBuddy 3.0 致力于解决研发团队在日常需求拆解、任务分发�
       }
     ],
     milestones: [
-      { id: 'm1', title: 'Q3 需求冻结与架构评审', date: '2025-05-01', stage: '需求阶段', status: 'completed', owner: 'Brandon', deliverables: ['PRD v3.0', '架构拓扑说明书'], description: '完成全量业务需求评审，确认技术选型与里程碑节点。' },
+      { id: 'm1', title: 'Q3 需求冻结与架构评审', date: '2025-05-01', stage: '需求阶段', status: 'completed', owner: 'graypuppy', deliverables: ['PRD v3.0', '架构拓扑说明书'], description: '完成全量业务需求评审，确认技术选型与里程碑节点。' },
       { id: 'm2', title: 'UI/UX 高保真交互系统', date: '2025-05-15', stage: '设计阶段', status: 'completed', owner: 'Chloe', deliverables: ['Design System 2.0', 'Figma 原型'], description: '交付全新暗色与亮色适配主题、响应式栅格系统与核心动效规范。' },
       { id: 'm3', title: '核心多 Agent 协同引擎研发', date: '2025-06-01', stage: '开发阶段', status: 'in-progress', owner: 'Alex', deliverables: ['Agent Engine v3.2', 'OpenAPI v3.2'], description: '完成自然语言意图分发、工作区文件索引与任务双向同步。' },
       { id: 'm4', title: '全链路集成测试与压力验收', date: '2025-06-15', stage: '验收阶段', status: 'pending', owner: 'David', deliverables: ['QA 验收报告', '安全审计清单'], description: '万级并发压力测试与全量用例回归测试。' },
-      { id: 'm5', title: '正式商业化版本全球发布', date: '2025-06-30', stage: '发版阶段', status: 'pending', owner: 'Brandon', deliverables: ['Release Note', '产品白皮书'], description: '面向全量企业客户开放升级，上线商业化计费套件。' }
+      { id: 'm5', title: '正式商业化版本全球发布', date: '2025-06-30', stage: '发版阶段', status: 'pending', owner: 'graypuppy', deliverables: ['Release Note', '产品白皮书'], description: '面向全量企业客户开放升级，上线商业化计费套件。' }
     ],
     risksAndBlockers: [
       { id: 'r1', level: 'medium', title: '大模型并发调用时的 Token 速率限流', impact: '可能导致高频并发下 Agent 响应延迟上升', mitigation: '已引入客户端本地流式限流队列与双模型自动故障转移 (Failover) 机制', status: 'resolved' },
@@ -618,7 +618,7 @@ WenXiBuddy 3.0 致力于解决研发团队在日常需求拆解、任务分发�
       { name: 'Chloe', role: 'Brand Director', avatar: 'CH', color: 'bg-rose-500' },
       { name: 'Leo', role: 'Frontend Engineer', avatar: 'LE', color: 'bg-blue-600' }
     ],
-    positioning: '展示 WenXiBuddy 国际化品牌调性与产品矩阵，承接全球流量转化。',
+    positioning: '展示 产品经理工作台 国际化品牌调性与产品矩阵，承接全球流量转化。',
     targetAudience: ['潜在企业客户采购决策者', '投资人', '开发者生态伙伴'],
     coreValues: [
       { title: '卓越视觉体验', desc: '采用 60fps 硬件加速动效与极简排印体系。', icon: 'Zap' },

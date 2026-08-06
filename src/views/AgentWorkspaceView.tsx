@@ -27,14 +27,14 @@ export function AgentWorkspaceView() {
           text: '好的，我已经解析了您的指令，并执行了以下自动化操作：\n\n✅ 在任务管理中创建了高优先级任务【沟通需求】\n✅ 在日程表中预定了明天上午 10:00 的【沟通需求会议】' 
         }]);
         addTask({
-          id: `WXB-2025-00${Math.floor(Math.random() * 900) + 10}`,
+          id: `PM-2025-00${Math.floor(Math.random() * 900) + 10}`,
           title: '沟通需求',
           priority: 'high',
           status: '未开始',
           description: 'AI 根据对话自动创建：与团队沟通确认最新的业务需求细节。',
-          project: 'WenXiBuddy 2.0',
-          assignee: 'Brandon',
-          assigneeAvatar: 'BR',
+          project: '产品经理工作台 2.0',
+          assignee: 'graypuppy',
+          assigneeAvatar: 'GP',
           deadline: '明天 12:00',
           aiSuggestions: ['建议提前准备会议大纲', '相关文件可能需要关联最新版 PRD']
         });

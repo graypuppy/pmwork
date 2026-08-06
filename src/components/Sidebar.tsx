@@ -21,7 +21,7 @@ export function Sidebar({ activeTab, onTabChange, menuItems }: SidebarProps) {
         <div className="bg-blue-600 text-white p-1.5 rounded-lg shadow-sm">
           <Briefcase size={20} />
         </div>
-        <span className="font-bold text-xl tracking-tight text-slate-800">WenXiBuddy</span>
+        <span className="font-bold text-lg tracking-tight text-slate-800">产品经理工作台</span>
       </div>
 
       <nav className="flex-1 px-4 py-2 space-y-1 overflow-y-auto custom-scrollbar">
@@ -64,12 +64,12 @@ export function Sidebar({ activeTab, onTabChange, menuItems }: SidebarProps) {
 
       <div className="p-4 border-t border-slate-100">
         <div className="flex items-center gap-3 px-3 py-2 rounded-xl hover:bg-slate-50 cursor-pointer transition-colors">
-          <div className="w-8 h-8 rounded-full bg-indigo-100 text-indigo-600 flex items-center justify-center font-bold text-sm">
-            BR
+          <div className="w-8 h-8 rounded-full bg-indigo-100 text-indigo-600 flex items-center justify-center font-bold text-xs">
+            GP
           </div>
           <div className="flex-1 min-w-0">
-            <p className="text-sm font-semibold text-slate-800 truncate">Brandon</p>
-            <p className="text-xs text-slate-500 truncate">产品总监 / 产研负责人</p>
+            <p className="text-sm font-semibold text-slate-800 truncate">graypuppy</p>
+            <p className="text-xs text-slate-500 truncate">产品经理 / 产研负责人</p>
           </div>
         </div>
       </div>

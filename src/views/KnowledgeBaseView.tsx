@@ -6,7 +6,7 @@ export function KnowledgeBaseView() {
 
   const docs = [
     { id: 'doc-1', title: '前端开发规范 V3.0', content: '# 前端开发规范 V3.0\n\n为了提高团队协作效率，特制定本规范。\n\n## 1. 目录结构\n- `src/components`: 共享组件\n- `src/views`: 页面视图\n- `src/hooks`: 自定义 Hooks\n\n## 2. 命名规范\n- 组件名称使用 PascalCase\n- 函数名称使用 camelCase\n- 常量使用 UPPER_SNAKE_CASE\n\n## 3. 状态管理\n优先使用 React Context 进行轻量级状态共享，复杂全局状态使用 Zustand。' },
-    { id: 'doc-2', title: 'WenXiBuddy 产品白皮书', content: '# WenXiBuddy 产品白皮书\n\n## 产品愿景\n打造下一代智能化的项目协作平台。\n\n## 核心场景\n1. AI 驱动的任务拆解\n2. 智能化的项目进度预测\n3. 自动化的文档总结' },
+    { id: 'doc-2', title: '产品经理工作台 产品白皮书', content: '# 产品经理工作台 产品白皮书\n\n## 产品愿景\n打造下一代智能化的项目协作平台。\n\n## 核心场景\n1. AI 驱动的任务拆解\n2. 智能化的项目进度预测\n3. 自动化的文档总结' },
     { id: 'doc-3', title: '新人入职指南', content: '# 新人入职指南\n\n欢迎加入！以下是你需要完成的第一周任务：\n\n- [ ] 配置开发环境\n- [ ] 阅读前端开发规范\n- [ ] 参加项目介绍会议' },
   ];
 

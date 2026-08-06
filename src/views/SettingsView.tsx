@@ -40,7 +40,7 @@ export function SettingsView() {
             {/* Avatar Section */}
             <div className="flex items-center gap-6 pb-8 border-b border-slate-100">
               <div className="w-24 h-24 rounded-full bg-indigo-100 text-indigo-600 flex items-center justify-center text-3xl font-bold border-4 border-white shadow-sm">
-                BR
+                GP
               </div>
               <div>
                 <div className="flex gap-3 mb-2">
@@ -55,15 +55,15 @@ export function SettingsView() {
             <div className="grid grid-cols-2 gap-6">
               <div className="space-y-2">
                 <label className="text-sm font-bold text-slate-700">姓名</label>
-                <input type="text" defaultValue="Brandon" className="w-full px-4 py-2.5 bg-slate-50 border border-slate-200 rounded-xl text-sm focus:outline-none focus:ring-2 focus:ring-blue-500/20 focus:border-blue-500 transition-all" />
+                <input type="text" defaultValue="graypuppy" className="w-full px-4 py-2.5 bg-slate-50 border border-slate-200 rounded-xl text-sm focus:outline-none focus:ring-2 focus:ring-blue-500/20 focus:border-blue-500 transition-all" />
               </div>
               <div className="space-y-2">
                 <label className="text-sm font-bold text-slate-700">用户名</label>
-                <input type="text" defaultValue="brandon_dev" className="w-full px-4 py-2.5 bg-slate-50 border border-slate-200 rounded-xl text-sm focus:outline-none focus:ring-2 focus:ring-blue-500/20 focus:border-blue-500 transition-all" />
+                <input type="text" defaultValue="graypuppy" className="w-full px-4 py-2.5 bg-slate-50 border border-slate-200 rounded-xl text-sm focus:outline-none focus:ring-2 focus:ring-blue-500/20 focus:border-blue-500 transition-all" />
               </div>
               <div className="col-span-2 space-y-2">
                 <label className="text-sm font-bold text-slate-700">邮箱地址</label>
-                <input type="email" defaultValue="brandon@example.com" className="w-full px-4 py-2.5 bg-slate-50 border border-slate-200 rounded-xl text-sm focus:outline-none focus:ring-2 focus:ring-blue-500/20 focus:border-blue-500 transition-all" />
+                <input type="email" defaultValue="graypuppy@example.com" className="w-full px-4 py-2.5 bg-slate-50 border border-slate-200 rounded-xl text-sm focus:outline-none focus:ring-2 focus:ring-blue-500/20 focus:border-blue-500 transition-all" />
               </div>
               <div className="space-y-2">
                 <label className="text-sm font-bold text-slate-700">职位/角色</label>

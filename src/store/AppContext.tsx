@@ -97,8 +97,8 @@ const INITIAL_LOCAL_FILES: LocalIndexedFile[] = [
   {
     id: 'lf-1',
     name: 'PRD_核心业务需求规格说明书_v3.2.docx',
-    folder: 'D:\\Projects\\WenXiBuddy\\workspace\\docs',
-    fullPath: 'D:\\Projects\\WenXiBuddy\\workspace\\docs\\PRD_核心业务需求规格说明书_v3.2.docx',
+    folder: 'D:\\Projects\\产品经理工作台\\workspace\\docs',
+    fullPath: 'D:\\Projects\\产品经理工作台\\workspace\\docs\\PRD_核心业务需求规格说明书_v3.2.docx',
     size: '2.8 MB',
     type: 'doc',
     extension: '.docx',
@@ -109,8 +109,8 @@ const INITIAL_LOCAL_FILES: LocalIndexedFile[] = [
   {
     id: 'lf-2',
     name: 'System_Architecture_Topology.pdf',
-    folder: 'D:\\Projects\\WenXiBuddy\\workspace\\arch',
-    fullPath: 'D:\\Projects\\WenXiBuddy\\workspace\\arch\\System_Architecture_Topology.pdf',
+    folder: 'D:\\Projects\\产品经理工作台\\workspace\\arch',
+    fullPath: 'D:\\Projects\\产品经理工作台\\workspace\\arch\\System_Architecture_Topology.pdf',
     size: '4.5 MB',
     type: 'pdf',
     extension: '.pdf',
@@ -121,8 +121,8 @@ const INITIAL_LOCAL_FILES: LocalIndexedFile[] = [
   {
     id: 'lf-3',
     name: 'openapi_spec_v2.json',
-    folder: 'D:\\Projects\\WenXiBuddy\\workspace\\api',
-    fullPath: 'D:\\Projects\\WenXiBuddy\\workspace\\api\\openapi_spec_v2.json',
+    folder: 'D:\\Projects\\产品经理工作台\\workspace\\api',
+    fullPath: 'D:\\Projects\\产品经理工作台\\workspace\\api\\openapi_spec_v2.json',
     size: '340 KB',
     type: 'code',
     extension: '.json',
@@ -144,8 +144,8 @@ const INITIAL_LOCAL_FILES: LocalIndexedFile[] = [
   {
     id: 'lf-5',
     name: '自动化测试用例覆盖率报告_Sprint12.xlsx',
-    folder: 'D:\\Projects\\WenXiBuddy\\workspace\\qa',
-    fullPath: 'D:\\Projects\\WenXiBuddy\\workspace\\qa\\自动化测试用例覆盖率报告_Sprint12.xlsx',
+    folder: 'D:\\Projects\\产品经理工作台\\workspace\\qa',
+    fullPath: 'D:\\Projects\\产品经理工作台\\workspace\\qa\\自动化测试用例覆盖率报告_Sprint12.xlsx',
     size: '1.2 MB',
     type: 'sheet',
     extension: '.xlsx',
@@ -157,10 +157,10 @@ const INITIAL_LOCAL_FILES: LocalIndexedFile[] = [
 const INITIAL_WORKSPACES: Workspace[] = [
   {
     id: 'ws-1',
-    name: 'WenXiBuddy 核心研发工作区',
-    folderPath: 'D:\\Projects\\WenXiBuddy\\workspace',
+    name: '产品经理工作台 核心研发工作区',
+    folderPath: 'D:\\Projects\\产品经理工作台\\workspace',
     projectId: 'p1',
-    projectName: 'WenXiBuddy AI 智能协同平台',
+    projectName: '产品经理工作台',
     createdAt: '2025-05-10',
     summary: '',
     files: [
@@ -170,7 +170,7 @@ const INITIAL_WORKSPACES: Workspace[] = [
         type: 'doc',
         size: '2.8 MB',
         updatedAt: '2025-05-18 14:30',
-        path: 'D:\\Projects\\WenXiBuddy\\workspace\\docs\\PRD_核心业务需求规格说明书_v3.2.docx',
+        path: 'D:\\Projects\\产品经理工作台\\workspace\\docs\\PRD_核心业务需求规格说明书_v3.2.docx',
         contentSnippet: '涵盖Q3版本核心业务逻辑、权限体系重构、数据指标报表及智能AI协同工作流定义。'
       },
       {
@@ -179,7 +179,7 @@ const INITIAL_WORKSPACES: Workspace[] = [
         type: 'pdf',
         size: '4.5 MB',
         updatedAt: '2025-05-16 11:20',
-        path: 'D:\\Projects\\WenXiBuddy\\workspace\\arch\\System_Architecture_Topology.pdf',
+        path: 'D:\\Projects\\产品经理工作台\\workspace\\arch\\System_Architecture_Topology.pdf',
         contentSnippet: '微服务架构拓扑、高可用容灾方案、数据缓存层与消息队列流转图谱。'
       }
     ]
